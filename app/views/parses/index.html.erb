@@ -1,0 +1,50 @@
+<h1 class="text-center">Game Reports</h1>
+<div class="content">
+  <% @parsed.each do |game| %>
+    <div class="container">
+      <div class="game">
+        <div class="table-head">
+          <h2 class="table-title">Game: <%= game.id %></h2>
+          <h3 class="table-title game-score">total score: <%= game.total_kills %></h3>
+        </div>
+        <table class="table table-striped table-dark">
+          <thead>
+          <tr class="line">
+            <th scope="col" class="text-left col">Player Name</th>
+            <th scope="col" class="text-left col">Score</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% game.players.each do |player| %>
+            <tr class="line">
+              <td class="text-left col"><%= player.name %></td>
+              <td class="text-center col bordered"><%= player.qtd_kills %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+      <div class="death-types">
+        <div class="table-head">
+          <h2 class="table-title">Causes of Death in Game</h2>
+        </div>
+        <table class="table table-striped table-dark">
+          <thead>
+          <tr class="line">
+            <th scope="col" class="text-left col">Death Type</th>
+            <th scope="col" class="text-left col">Quantity</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% game.types_of_death.each do |death_type| %>
+            <tr class="line">
+              <td class="text-left col"><%= death_type.name %></td>
+              <td class="text-center col"><%= death_type.quantity %></td>
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,36 @@
+// Place all the styles related to the parses controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.content{
+  margin-top: 50px;
+}
+.container{
+  display: flex;
+}
+.game {
+  width: 500px;
+  margin: 15px auto 15px auto;
+}
+.death-types {
+  margin: 15px auto 15px auto;
+  width: 500px;
+}
+.table-head {
+  background-color: #2E2F30;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px 10px 0px 0px;
+}
+.table-title {
+  color: #F7F7F7;
+  display: inline;
+}
+.game-score {
+  padding-left: 150px;
+}
+.entry {
+  width: 100%;
+  margin-top: 150px;
+  padding-left: 350px;
+}
+

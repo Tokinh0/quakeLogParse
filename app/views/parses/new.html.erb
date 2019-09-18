@@ -1,0 +1,8 @@
+<div class="entry">
+  <h1 class="index-tittle">Quake Parse Log</h1>
+  <%= form_with(url: 'create', method: "post", multipart: true) do %>
+    <%= file_field_tag 'quake_log', class: 'file-field'%><br><br>
+    <%= submit_tag "Enviar", class: 'button-field'%>
+  <% end %>
+</div>
+
