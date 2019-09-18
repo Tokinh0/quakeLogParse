@@ -1,24 +1,6 @@
-# README
+Simple solucion to parse log of game quake 3 arena.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+to run you will nedd the lasted version of ruby on rails
+them, via terminal, type the comand inside the folder root application to install all dependencys: bundle install
+after that, you just need to run the server with comand: rails s
+open a browser and type inside URI: localhost:3000
